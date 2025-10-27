@@ -120,8 +120,8 @@ ProductReviewAnalysis/
 
 ##     Application Design
 
-![Design diagrame](./Backend/designAnalysis/Componentdiagrame.png)</a>
+![Design diagrame](./BackEnd/designAnalysis/Componentdiagrame.png)</a>
 
 
-# Front End Readme docs 
-![Design diagrame] (./Frontend/CustomerFeedbackAnalysis\Frontend\product-review-ui/README.md)
+## Front End Readme docs 
+![➡️ View the Frontend README](./Frontend/CustomerFeedbackAnalysis\Frontend\product-review-ui/README.md)
