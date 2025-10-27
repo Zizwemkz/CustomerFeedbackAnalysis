@@ -146,17 +146,10 @@ Key Concepts:
 * Layered System: Controllers → Services → Repositories.
 * HTTP Verbs: GET / POST / PUT / DELETE map to CRUD.
 * Error Handling: Middleware ensures consistent 400/404/500 responses.
-
- # Benefits
-* Clear and predictable API design
-* Easy third-party integration
-* Supports scalability (future microservices or AI endpoints)
-
-# Additional Features:
-
+  
+  **Additional Features:**
 * Structured error handling
 * Optional mock mode for offline testing
-
 * Unit tests for Repository CRUD operations
 * FeedbackService logic validation
 * Controller endpoint integration tests
@@ -166,7 +159,7 @@ Key Concepts:
 
 ##     Application Design
 
-![Design diagrame](./BackEnd/designAnalysis/Componentdiagrame.png)</a>
+![Design diagrame](./designAnalysis/Componentdiagrame.png)</a>
 
 
 
