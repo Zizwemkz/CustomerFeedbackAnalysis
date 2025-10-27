@@ -76,7 +76,7 @@ ProductReviewAnalysis/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Zizwemkz/ProductReviewAnalysis.git
+   git clone https://github.com/Zizwemkz/CustomerFeedbackAnalysis.git
    cd ProductReviewAnalysis
     ```
 2. **Restore and Build the Solution**
@@ -120,4 +120,8 @@ ProductReviewAnalysis/
 
 ##     Application Design
 
-![Design diagrame](./designAnalysis/Componentdiagrame.png)</a>
+![Design diagrame](./Backend/designAnalysis/Componentdiagrame.png)</a>
+
+
+# Front End Readme docs 
+![Design diagrame] (./Frontend/CustomerFeedbackAnalysis\Frontend\product-review-ui/README.md)

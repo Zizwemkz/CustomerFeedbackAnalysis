@@ -61,7 +61,7 @@ product-review-ui/
 
  #   **Clone the Repository**
  ```bash
-    git clone https://github.com/your-repo/product-review-ui.git
+    git clone https://github.com/Zizwemkz/CustomerFeedbackAnalysis.git
     cd product-review-ui
  ```
 
