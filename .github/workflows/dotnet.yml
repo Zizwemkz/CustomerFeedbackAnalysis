@@ -1,0 +1,55 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET
+
+on:
+  push:
+    branches: [ "Master" ]
+  pull_request:
+    branches: [ "Master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    
+    - name: Restore dependencies
+      run: dotnet restore
+    
+    - name: Build
+      run: dotnet build --no-restore
+    
+    - name: Run unit Tests
+      run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage "
+
+    - name: Install Stryker tool
+      run: |
+        dotnet new tool-manifest
+        dotnet tool install dotnet-stryker
+        dotnet tool restore
+    
+    - name: Run Stryker Mutation Tests
+      run: |
+        dotnet stryker --reporter "html" --break-at 7
+
+    - name: Upload Stryker report artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: stryker-mutation-report
+        path: |
+          **/StrykerOutput/**/*.html
+          **/StrykerOutput/**/*.json
+
+    - name: Publish Build Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: dotnet-api-publish
+        path: ./publish
