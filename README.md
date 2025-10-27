@@ -131,30 +131,46 @@ Frontend UI → http://localhost:3000
 
 
 
-Architectural Reasoning
+## Architectural Reasoning
+
 Why RESTful API Principles?
 
-The backend adheres to REST standards for clarity, scalability, and maintainability.
+<div align="center">
+  <p>
+   
+# The backend adheres to REST standards for clarity, scalability, and maintainability.
 
 Key Concepts:
 
-Uniform Interface: /api/feedback, /api/feedback/{id}
+* Uniform Interface: /api/feedback, /api/feedback/{id}
+* Stateless Communication: Each request is independent.
+* Layered System: Controllers → Services → Repositories.
+* HTTP Verbs: GET / POST / PUT / DELETE map to CRUD.
+* Error Handling: Middleware ensures consistent 400/404/500 responses.
 
-Stateless Communication: Each request is independent.
+ # Benefits
+* Clear and predictable API design
+* Easy third-party integration
+* Supports scalability (future microservices or AI endpoints)
 
-Layered System: Controllers → Services → Repositories.
+# Additional Features:
 
-HTTP Verbs: GET / POST / PUT / DELETE map to CRUD.
+* Structured error handling
+* Optional mock mode for offline testing
 
-Error Handling: Middleware ensures consistent 400/404/500 responses.
+* Unit tests for Repository CRUD operations
+* FeedbackService logic validation
+* Controller endpoint integration tests
+  </p>
+</div>
 
- Benefits
 
-Clear and predictable API design
+##     Application Design
 
-Easy third-party integration
+![Design diagrame](./BackEnd/designAnalysis/Componentdiagrame.png)</a>
 
-Supports scalability (future microservices or AI endpoints)
+
+
 
 ## API Endpoints Overview
 
@@ -182,19 +198,3 @@ Returns structured JSON:
 }
 ```
 
-Additional Features:
-
-Retry logic with exponential backoff
-
-Structured error handling
-
-Optional mock mode for offline testing
-
- Testing & Quality
- Backend
-
-Unit tests for Repository CRUD operations
-
-FeedbackService logic validation
-
-Controller endpoint integration tests
