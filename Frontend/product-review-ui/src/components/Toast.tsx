@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 
 interface ToastProps {
   message?: string | null;
@@ -12,22 +13,12 @@ export const Toast: React.FC<ToastProps> = ({ message, type = "info", onClose })
     <div
       role="status"
       aria-live="polite"
-      style={{
-        position: "fixed",
-        right: 20,
-        top: 20,
-        padding: "12px 16px",
-        borderRadius: 6,
-        background: type === "success" ? "#DFF2E1" : type === "error" ? "#FFE2E2" : "#EDF2FF",
-        color: "#111",
-        boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-        zIndex: 2000,
-      }}
+      className={`toast toast-${type}`}
     >
-      <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-        <div style={{ fontWeight: 600 }}>{type === "success" ? "Success" : type === "error" ? "Error" : "Info"}</div>
-        <div style={{ opacity: 0.9 }}>{message}</div>
-        <button aria-label="close toast" onClick={onClose} style={{ marginLeft: 8 }}>
+      <div className="toast-content">
+        <div className="toast-title">{type === "success" ? "Success" : type === "error" ? "Error" : "Info"}</div>
+        <div className="toast-message">{message}</div>
+        <button aria-label="close toast" onClick={onClose} className="toast-close">
           ✕
         </button>
       </div>

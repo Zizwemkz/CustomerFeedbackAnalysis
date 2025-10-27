@@ -10,10 +10,10 @@ const api = axios.create({
   timeout: 15000,
 });
 
+
 api.interceptors.response.use(
   (res) => res,
   (err) => {
-    // Normalize errors for components
     if (err.response) {
       return Promise.reject({
         status: err.response.status,
