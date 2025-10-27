@@ -124,4 +124,4 @@ ProductReviewAnalysis/
 
 
 ## Front End Readme docs 
-![➡️ View the Frontend README](./Frontend/CustomerFeedbackAnalysis/Frontend/product-review-ui/README.md)
+![➡️ View the Frontend README](./Frontend/product-review-ui/README.md)
