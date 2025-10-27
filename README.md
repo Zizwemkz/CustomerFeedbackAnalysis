@@ -124,11 +124,10 @@ Frontend UI → http://localhost:3000
 ```
 
 
-| Layer                      | Description                                     |    Link                              |
-| ------------------------ | ----------------------------------------------- |    
-| Backend (.NET 8 Web API) | REST API + AI integration + SQLite persistence  | [Backend README →](./backend/README.md)                        |                                                 |
-| Frontend (React )        | UI for feedback submission and review dashboard | [ Frontend README →](./frontend/product-review-ui/README.md) |
-
+| Layer                    | Description           | Link                                                           |
+|--------------------------|-----------------------|----------------------------------------------------------------|
+| Backend (.NET 8) | REST API + AI integration     | [Backend README →](./backend/README.md)                        |
+| Frontend (React) | UI feedback  review dashboard | [Frontend README →](./frontend/product-review-ui/README.md)    |
 
 
 ## Architectural Reasoning
