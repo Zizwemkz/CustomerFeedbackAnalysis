@@ -169,8 +169,8 @@ Key Concepts:
 | Method   | Endpoint             | Description                                                 |
 | -------- | -------------------- | ----------------------------------------------------------- |
 | **POST** | `/api/feedback`      | Submit new feedback (runs AI analysis and stores it)        |
-| **GET**  | `/api/feedback`      | Paginated list of feedback (supports sentiment/tag filters) |
-| **GET**  | `/api/feedback/{id}` | Retrieve full feedback record with AI analysis              |
+| **GET**  | `/api/`              | Paginated list of feedback (supports sentiment/tag filters) |
+| **GET**  | `/api/{id}`          | Retrieve full feedback record with AI analysis              |
 
 
 ## AI Integration (google OpenAI )

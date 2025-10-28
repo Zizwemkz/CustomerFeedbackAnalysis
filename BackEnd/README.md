@@ -87,7 +87,7 @@ ProductReviewAnalysis/
 
 3. **Apply Database Migrations**
    ```bash
-    dotnet ef database update --project ProductReviewAnalysis.Infrastructure
+    dotnet ef database update --project ProductReviewAnalysis.Data
     ```
 
 4. **Run the Application**
