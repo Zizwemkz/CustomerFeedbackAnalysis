@@ -116,12 +116,3 @@ ProductReviewAnalysis/
     | GET	      |/api/{id}                | Get review by Id
     | POST	      |/api/feedack	            | Submit a new review
     ```
-
-
-##     Application Design
-
-![Design diagrame](./BackEnd/designAnalysis/Componentdiagrame.png)</a>
-
-
-## Front End Readme docs 
-![➡️ View the Frontend README](./Frontend/product-review-ui/README.md)
